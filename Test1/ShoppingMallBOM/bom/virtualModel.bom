@@ -1,0 +1,8 @@
+
+property uuid "d8e4b94c-e8b5-4c27-b0ef-b395109a01be"
+
+public class vClass
+{
+    public static java.lang.Double calSquare(java.lang.Double number);
+}
+

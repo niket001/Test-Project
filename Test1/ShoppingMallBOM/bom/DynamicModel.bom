@@ -1,0 +1,19 @@
+
+property uuid "efa0e35d-5c05-49a1-b4ab-fde70164ef1d"
+
+public class virtualClass
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "1"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en" "2"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property domainProviderResource "DynamicDomain - Copy - Copy.xlsx"
+        property domainValueProviderName "com.ibm.rules.domainProvider.msexcel2007"
+{
+    domain {static AS, static ZR, static HM}
+    public static final readonly virtualClass AS;
+    public static final readonly virtualClass HM;
+    public static final readonly virtualClass ZR;
+}
+

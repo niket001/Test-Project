@@ -1,0 +1,6 @@
+# Vocabulary Properties
+uuid = 365001f9-a2da-4a8f-926d-b804e17df507
+
+# vClass
+vClass#concept.label = v class
+vClass.calSquare(java.lang.Double)#phrase.navigation = square of rewrdspoint is {0}

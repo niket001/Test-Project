@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>ZaraRule2nd</name>
+  <uuid>948cbbe8-d5dd-49c4-8113-4eb2830be4c8</uuid>
+  <active>false</active>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+   the brand name of 'the request' is Zara 
+    and the total price of 'the request' is more than 5000
+then
+    set the discount of 'the response' to 0.1 * the total price of 'the request' ;
+    set the rewards point of 'the response' to (convert rewardpoints to square of 5)*10; 
+    print "The Discount price is:" + the discount of 'the response' ;
+    print "The Reward point is:" + the rewards point of 'the response' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

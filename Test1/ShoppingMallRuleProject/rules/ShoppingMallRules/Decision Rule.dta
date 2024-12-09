@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>Decision Rule</name>
+  <uuid>354eb19f-de05-444f-a9cc-16f2679076d9</uuid>
+  <locale>en_US</locale>
+  <definition>
+<DT Version="7.0" xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable">
+  <Body>
+    <Structure>
+      <ConditionDefinitions>
+        <ConditionDefinition Id="C0">
+          <ExpressionDefinition>
+            <Text><![CDATA[the brand name of 'the request' is <an object>]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+        <ConditionDefinition Id="C1">
+          <ExpressionDefinition>
+            <Text><![CDATA[the total price of 'the request' is <a number>]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+      </ConditionDefinitions>
+      <ActionDefinitions>
+        <ActionDefinition Id="A0">
+          <ExpressionDefinition>
+            <Text><![CDATA[set the discount of 'the response'  to <a number> * the total price of 'the request']]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+        <ActionDefinition Id="A1">
+          <ExpressionDefinition>
+            <Text><![CDATA[print <a string> + the discount of 'the response']]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+      </ActionDefinitions>
+    </Structure>
+    <Contents>
+      <Partition DefId="C0">
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Zara]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[10000]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA[0.1]]></Param>
+                  </Expression>
+                </Action>
+                <Action DefId="A1">
+                  <Expression>
+                    <Param><![CDATA["Zara Discount is:"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA[Allen Solly]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA[20000]]></Param>
+              </Expression>
+              <ActionSet>
+                <Action DefId="A0">
+                  <Expression>
+                    <Param><![CDATA[0.2]]></Param>
+                  </Expression>
+                </Action>
+                <Action DefId="A1">
+                  <Expression>
+                    <Param><![CDATA["Allen Solly Discount is:"]]></Param>
+                  </Expression>
+                </Action>
+              </ActionSet>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Otherwise/>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+            <Action DefId="A1">
+              <Expression>
+                <Param><![CDATA["No such brand found"]]></Param>
+              </Expression>
+            </Action>
+          </ActionSet>
+        </Condition>
+      </Partition>
+    </Contents>
+  </Body>
+  <Resources DefaultLocale="en_US">
+    <ResourceSet Locale="en_IN">
+      <Data Name="Definitions(A0)#HeaderText"><![CDATA[Discount%]]></Data>
+      <Data Name="Definitions(A0)#Width"><![CDATA[248]]></Data>
+      <Data Name="Definitions(A1)#HeaderText"><![CDATA[Print Discount]]></Data>
+      <Data Name="Definitions(A1)#Width"><![CDATA[165]]></Data>
+      <Data Name="Definitions(C0)#HeaderText"><![CDATA[BrandName]]></Data>
+      <Data Name="Definitions(C0)#Width"><![CDATA[510]]></Data>
+      <Data Name="Definitions(C1)#HeaderText"><![CDATA[TotalPrice]]></Data>
+      <Data Name="Definitions(C1)#Width"><![CDATA[516]]></Data>
+    </ResourceSet>
+  </Resources>
+</DT>
+</definition>
+</ilog.rules.studio.model.dt:DecisionTable>

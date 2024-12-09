@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>variable</name>
+  <uuid>4e8a4f17-a59d-46e0-be78-383ed04249a4</uuid>
+  <variables name="request" type="Com.training.Request" initialValue="" verbalization="the request"/>
+  <variables name="response" type="Com.training.Response" initialValue="new Com.training.Response()" verbalization="the response"/>
+  <variables name="myVar" type="java.lang.Double" initialValue="" verbalization="the myVar"/>
+</ilog.rules.studio.model.base:VariableSet>

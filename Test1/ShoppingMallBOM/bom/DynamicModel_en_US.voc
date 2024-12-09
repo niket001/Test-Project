@@ -1,0 +1,11 @@
+# Vocabulary Properties
+uuid = 42fe61ba-5276-4e28-8087-2d02ecd19ab9
+
+# virtualClass
+virtualClass#concept.label = virtualClass
+virtualClass.AS#instance.documentation = Allen Solly
+virtualClass.AS#instance.label = Allen Solly
+virtualClass.HM#instance.documentation = H&M
+virtualClass.HM#instance.label = H&M
+virtualClass.ZR#instance.documentation = Zara
+virtualClass.ZR#instance.label = Zara

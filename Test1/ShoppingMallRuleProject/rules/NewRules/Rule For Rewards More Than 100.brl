@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Rule For Rewards More Than 100</name>
+  <uuid>fedf8974-aa91-485b-8dc6-74d343a89d20</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then
+    print "Rewrds Point will expire in next 30days";]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

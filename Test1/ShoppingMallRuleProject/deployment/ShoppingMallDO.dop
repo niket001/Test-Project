@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="ShoppingMallDO" usingRuleflow="true" ruleflowName="MainRuleFlow" targetRuleProjectName="ShoppingMallRuleProject">
+  <name>ShoppingMallDO</name>
+  <uuid>7ce9ae97-8b45-4134-9342-8f69c869a899</uuid>
+  <referencedVariables variableName="request" variableSetName="variable">
+    <variableSet href="../rules/variable.var#4e8a4f17-a59d-46e0-be78-383ed04249a4"/>
+  </referencedVariables>
+  <referencedVariables variableName="response" variableSetName="variable" direction="OUT">
+    <variableSet href="../rules/variable.var#4e8a4f17-a59d-46e0-be78-383ed04249a4"/>
+  </referencedVariables>
+  <ruleflow href="../rules/MainRuleFlow.rfl#16417482-9753-4f6f-ae64-f755bf4a55bf"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="ShoppingMallDO_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../ShoppingMallRuleProject#1e649908-2c71-49b8-95b2-aeb51b07d65f"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

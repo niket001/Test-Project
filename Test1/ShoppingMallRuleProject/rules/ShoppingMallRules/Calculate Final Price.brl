@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Calculate Final Price</name>
+  <uuid>406122b9-bcd6-4321-8c6e-2e80cafb9da2</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then
+    set the final price of 'the response' to the total price of 'the request' - the discount of 'the response' ;
+    print "The final Price is:" + the final price of 'the response' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

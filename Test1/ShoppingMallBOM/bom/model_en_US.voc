@@ -1,0 +1,28 @@
+# Vocabulary Properties
+uuid = 38f2ef21-c51c-4753-872a-a6163a6ae3e1
+
+# Com.training.HelperClass
+Com.training.HelperClass#concept.label = helper class
+Com.training.HelperClass.calcAge(java.util.Date)#phrase.navigation = age of user from {0}
+Com.training.HelperClass.square(double)#phrase.navigation = convert rewardpoints to square of {0}
+
+# Com.training.Request
+Com.training.Request#concept.label = request
+Com.training.Request.city#phrase.action = set the city of {this} to {city}
+Com.training.Request.city#phrase.navigation = {city} of {this}
+Com.training.Request.dob#phrase.action = set the dob of {this} to {dob}
+Com.training.Request.dob#phrase.navigation = {dob} of {this}
+Com.training.Request.totalPrice#phrase.action = set the total price of {this} to {total price}
+Com.training.Request.totalPrice#phrase.navigation = {total price} of {this}
+Com.training.Request.vbrandName#phrase.action = set the brand name of {this} to {brand name}
+Com.training.Request.vbrandName#phrase.clearer = clear the brand name of {this}
+Com.training.Request.vbrandName#phrase.navigation = {brand name} of {this}
+
+# Com.training.Response
+Com.training.Response#concept.label = response
+Com.training.Response.discount#phrase.action = set the discount of {this} to {discount}
+Com.training.Response.discount#phrase.navigation = {discount} of {this}
+Com.training.Response.finalPrice#phrase.action = set the final price of {this} to {final price}
+Com.training.Response.finalPrice#phrase.navigation = {final price} of {this}
+Com.training.Response.rewardsPoint#phrase.action = set the rewards point of {this} to {rewards point}
+Com.training.Response.rewardsPoint#phrase.navigation = {rewards point} of {this}

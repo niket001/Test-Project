@@ -1,0 +1,32 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/ShoppingMallBOM//ShoppingMallXOM"
+property uuid "2d8c21be-2ee3-4133-beb5-601da603ebb1"
+package Com.training;
+
+
+public class HelperClass
+{
+    public HelperClass();
+    public static int calcAge(java.util.Date arg);
+    public static double square(double arg);
+}
+
+public class Request
+{
+    public string brandName;
+    public string city;
+    public java.util.Date dob;
+    public double totalPrice;
+    public virtualClass vbrandName;
+    public Request();
+}
+
+public class Response
+{
+    public double discount;
+    public double finalPrice;
+    public double rewardsPoint;
+    public Response();
+}
+
